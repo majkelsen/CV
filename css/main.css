@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/tlo.png");
+    /* This pattern is downloaded from www.subtlepatterns.com . If you need more, that's where to get'em. */
+    font-family: 'Niramit', sans-serif;
+
+}
+
+.menu {
+    background-color: #fff;
+    position: relative;
+    width: 550px;
+    height: 650px;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid black;
+    border-radius: 1%;
+    box-shadow: inset 0 0 100px black, 0 0 10px 5px rgba(40, 40, 40, 0.5);
+    background-color: #16090D;
+}
+
+
+
+.hello {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 100px;
+    text-align: center;
+    color: orangered;
+
+}
+
+.form {
+    position: relative;
+    top: 45%;
+    width: 100%;
+    height: 50%;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 110px;
+    line-height: 125px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 50px;
+}
+
+input[type=text] {
+    position: absolute;
+    display: block;
+    top: 30%;
+    width: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    box-sizing: border-box;
+    background-color: #000;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border: 1px solid darkred;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    text-transform: none;
+    font-family: 'Niramit', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+input[type=text]:focus {
+    border: 1px solid darkred;
+    color: red;
+    outline: none;
+    box-shadow: 0 0 10px 5px red;
+}
+
+input[type=text]::placeholder {
+    color: #C61A00;
+    opacity: .7;
+}
+
+input[type=submit] {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 8px auto;
+    display: block;
+
+
+    padding: 10px 15px;
+    border: 2px solid darkred;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(135deg, darkorange, #c62d1f);
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Sigmar One', cursive;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    outline: 0;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active,
+input[type=submit]:focus {
+    background-color: darkred;
+    box-shadow: 0 0 10px 5px red;
+    background: linear-gradient(135deg, #c62d1f, darkorange);
+    border: 1px solid red;
+    outline: 0;
+}
+
+
+
+.error {
+    position: absolute;
+    display: block;
+    top: 10%;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: 'Niramit', sans-serif;
+    color: royalblue;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .hello {
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    h1 {
+        font-size: 90px;
+        line-height: 100px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    input[type=text] {
+        top: 45%;
+        width: 50%;
+    }
+
+    input[type=submit] {
+        top: 70%;
+        width: 70%;
+    }
+
+    .error {
+        top: 15%;
+        width: 90%;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 530px) {
+    .hello {
+        width: 80%;
+    }
+}
+
+@media (max-width: 370px) {
+
+    h1 {
+        font-size: 80px;
+        line-height: 90px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 330px) {
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .error {
+        top: 5%;
+        width: 80%;
+        font-size: 23px;
+    }
+}
