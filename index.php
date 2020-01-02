@@ -28,7 +28,7 @@
     <div class="hello">
         <h1>witaj</h1>
         <h2>podaj hasło aby przejść do CV </h2>
-        <h2 style="text-transform:none">(2019cvM)</h2>
+        <h3 style="text-transform:none">< 2020cvM ></h3>
     </div>
 
     <div class="form">

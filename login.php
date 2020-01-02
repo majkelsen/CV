@@ -26,9 +26,7 @@
 
 
 		$rezultat = @$connection->query("SELECT pass FROM logins WHERE id=1");
-    $rezultat2 = @$connection->query("SELECT pass FROM logins WHERE id=2");
 		$check = $rezultat->fetch_assoc();
-		$check2 = $rezultat2->fetch_assoc(); 
 
 		if (password_verify($password,$check['pass'])) {
 
@@ -38,16 +36,7 @@
 				$rezultat->free_result();
 				header('Location: cv.php');
 
-		}else {
-            if (password_verify($password,$check2['pass'])) {
-            
-                		$_SESSION['zalogowany'] = true;
-            								
-            				unset($_SESSION['blad']);
-            				$rezultat->free_result();
-            				header('Location: cv.php');
-            
-            		}
+		}else {            
 			$_SESSION['blad'] = '<div class="error">HASŁO NIEPRAWIDŁOWE</div>';
 			header('Location: index.php');
 
